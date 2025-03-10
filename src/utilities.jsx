@@ -9,7 +9,7 @@ function GetData(props) {
     method: 'GET',
     headers: {
         accept: 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NDI1N2M4ZjYxNjdiNDQ0MWNiZmQ4NzZmM2IyNTI4MiIsIm5iZiI6MTc0MDU1NTc3MC4zNTksInN1YiI6IjY3YmVjNWZhZjk3NTVmZTA5ZDU2MWRiNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BGSVHTfsgPon2tVop9KqfWB-2xRHfV4VvHuzkrNmiDs',
+        Authorization: 'Bearer *******************',
     },
     };
     const links = {
