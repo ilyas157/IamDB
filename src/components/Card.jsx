@@ -1,6 +1,9 @@
 import React from "react";
 
 function Card(props) {
+    function goMovie(){
+        window.location.href = props.tmdb_link;
+    }
     return (
         <div className="card" >
             {
