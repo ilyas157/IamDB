@@ -52,7 +52,7 @@ function GetData(props) {
             <p>Error fetching {props.genre === "tv"? "Tv Shows":"Movies"}</p>
             ) : data.results && data.results.length > 0 ? (
             data.results.map((film) => (
-                <Card key={film.id} title={props.genre === "movie"? film.title:film.name} poster={film.poster_path} vote={film.vote_average} />
+                <Card key={film.id} tmdb_link={`https://vidsrc-embed.ru/embed/${props.genre}/${film.id}`} title={props.genre === "movie"? film.title:film.name} poster={film.poster_path} vote={film.vote_average} />
             ))
                     ) : (<div className="notFound" style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
                             <img src="https://cdn-icons-png.flaticon.com/128/4826/4826312.png" loading="lazy" alt="Error 404 " title="Error 404 " width="50" height="50" style={{padding:"40px 0px 50px 0px"}}/>
